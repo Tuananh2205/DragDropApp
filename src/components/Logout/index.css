@@ -1,0 +1,11 @@
+.btn-logout {
+	outline: none;
+	background-color: rgb(226, 74, 138);
+	border-radius: 25px;
+	text-decoration: none;
+	color: white;
+	padding: 10px 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+}

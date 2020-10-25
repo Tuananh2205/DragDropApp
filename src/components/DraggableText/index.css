@@ -1,0 +1,17 @@
+.text-output {
+	border: 1px solid black;
+	height: 200px;
+	width: 90%;
+}
+
+#text {
+	width: fit-content;
+	line-height: 20px;
+	padding: 5px 10px;
+}
+
+.drag-wrapper {
+	cursor: grabbing;
+	background: #ccc;
+	width: fit-content;
+}

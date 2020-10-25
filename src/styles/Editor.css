@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+}
+
+.content {
+	display: flex;
+}
+.left-area {
+	margin-left: 10px;
+	flex: 1;
+	border: 1px solid red;
+}
+
+.right-area {
+	flex: 1;
+	border: 1px solid blue;
+}
