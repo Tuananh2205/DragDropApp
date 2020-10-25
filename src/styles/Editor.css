@@ -1,5 +1,6 @@
 .header {
-	display: flex;
+	border: 1px solid red;
+	float: right;
 }
 
 .content {
@@ -8,10 +9,18 @@
 .left-area {
 	margin-left: 10px;
 	flex: 1;
-	border: 1px solid red;
 }
 
 .right-area {
 	flex: 1;
-	border: 1px solid blue;
+}
+
+.navbar-footer {
+	display: flex;
+}
+
+.nav1,
+.nav2,
+.nav3 {
+	flex: 1;
 }

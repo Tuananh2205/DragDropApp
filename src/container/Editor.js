@@ -25,6 +25,11 @@ const Editor = () => {
 					<DroppableText />
 				</div>
 			</div>
+			<div className="navbar-footer">
+				<div className="nav1">Font-size</div>
+				<div className="nav2">Font-family</div>
+				<div className="nav3">Font-color</div>
+			</div>
 		</>
 	);
 };
