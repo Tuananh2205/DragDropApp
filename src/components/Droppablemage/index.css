@@ -2,5 +2,21 @@
 	border: 1px solid black;
 	height: 300px;
 	width: 90%;
-	margin-top: 44px;
+	margin-top: 50px;
+}
+
+.btn-save {
+	border-radius: 15px;
+	outline: none;
+	color: wheat;
+	background-color: rgb(55, 158, 236);
+	font-size: 15px;
+	padding: 10px;
+	font-weight: bolder;
+	margin-top: 10px;
+}
+
+.btn-save:focus {
+	border: 1px solid coral;
+	box-shadow: 0 0 5px coral;
 }

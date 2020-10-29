@@ -4,14 +4,16 @@ import './index.css';
 function DraggableText(props) {
 	const [text, setText] = useState('');
 	const [datas, setData] = useState([]);
+	const {styleSize, styleFont, styleColor} = props
 	const handleChange = (e) => {
 		setText(e.target.value);
 	};
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setData([...datas, text]);
+		setText('');
 		return datas;
-		// setText('');
+		
 	};
 
 	const lastEl = datas[datas.length - 1];
@@ -27,16 +29,22 @@ function DraggableText(props) {
 	return (
 		<>
 			<div className="text-input">
+				<h3>TEXT FIELD</h3>
 				<form onSubmit={handleSubmit}>
-					<input type="text" placeholder="Write something here" value={text} onChange={handleChange} />
+					<label className="text-label">Input Text: </label>
+					<input className="text-placeholder" type="text" placeholder="Write something here" value={text} onChange={handleChange} />
 				</form>
 			</div>
 			<br />
 			<div className="text-output">
-				<div id="text" className="drag-wrapper" draggable="true" onDragStart={dragStart} onDragOver={dragOver}>
-					<p>{lastEl}</p>
-				</div>
+					<p id="text" 
+				className="drag-wrapper" 
+				style= {{fontSize:styleSize + "px", fontFamily:styleFont, color:styleColor}} 
+				draggable="true" 
+				onDragStart={dragStart} 
+				onDragOver={dragOver}>{lastEl}</p>
 			</div>
+			
 		</>
 	);
 }

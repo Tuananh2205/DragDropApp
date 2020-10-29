@@ -12,6 +12,17 @@
 
 .drag-wrapper {
 	cursor: grabbing;
-	background: #ccc;
 	width: fit-content;
+}
+
+.text-placeholder{
+	border-radius: 15px;
+	height: 20px;
+}
+
+.text-placeholder:focus {
+	outline: none;
+	border: 1px solid coral;
+	box-shadow: 0 0 5px coral;
+	font-style: italic;
 }

@@ -1,5 +1,4 @@
-.header {
-	border: 1px solid red;
+.nav {
 	float: right;
 }
 
@@ -13,14 +12,18 @@
 
 .right-area {
 	flex: 1;
+	margin-top: 50px;
 }
 
-.navbar-footer {
-	display: flex;
-}
 
-.nav1,
-.nav2,
-.nav3 {
-	flex: 1;
-}
+.seperator {
+	height: 100%;
+	width: 1px;
+	background: black;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+  }
+  

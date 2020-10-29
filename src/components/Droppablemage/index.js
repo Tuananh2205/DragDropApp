@@ -11,7 +11,12 @@ function DroppableImage(props) {
 	const dragOver = (e) => {
 		e.preventDefault();
 	};
-	return <div className="drop-image" onDrop={dropImage} onDragOver={dragOver}></div>;
+	return (
+		<div>
+			<div className="drop-image" onDrop={dropImage} onDragOver={dragOver}></div>
+			<button className="btn-save">Save</button>
+		</div>
+	);
 }
 
 export default DroppableImage;

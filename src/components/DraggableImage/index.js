@@ -24,21 +24,24 @@ function DraggableImage(props) {
 	return (
 		<div>
 			<div className="input-image">
+				<h3>IMAGE FIELD</h3>
 				<form onSubmit={displayImage}>
 					<input type="file" onChange={getImage} />
 				</form>
 			</div>
 			<br />
 			<div className="output-image">
+				<div className="pic-container">
 				<img
 					id="picture"
 					className="image"
 					src={uploadFile}
-					alt="picture"
+					alt="pic"
 					draggable="true"
 					onDragStart={dragStart}
 					onDragOver={dragOver}
 				/>
+				</div>
 			</div>
 		</div>
 	);
